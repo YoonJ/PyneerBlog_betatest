@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'blippoblack';
+    src: url('blippo-webfont.woff2') format('woff2'),
+         url('blippo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
