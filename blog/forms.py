@@ -9,4 +9,4 @@ class PostForm(forms.ModelForm):
 class ProjectForm(forms.ModelForm):
     class Meta:
         model = Project
-        fields = ('project_title', 'project_text', 'project_member',)
+        fields = ('project_title', 'project_text', 'project_member', 'project_extra',)

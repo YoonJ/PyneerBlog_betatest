@@ -14,7 +14,7 @@ def project_list(request):
 
 def project_detail(request, pk):
     project = get_object_or_404(Project, pk=pk)
-    return render(request, 'blog/project_detail.html',{'project':project})
+    return render(request, 'blog/project_detail.html', {'project':project})
 
 # def post_list(request):
 #     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-created_date')

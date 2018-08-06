@@ -36,10 +36,12 @@
         <img src="{% static 'img/project/gui1.png' %}">
         <img src="{% static 'img/project/gui2.png' %}">
     </div>
-    <div class="project-external">
-        2017 성균관대학교 C-School 성과발표회 우수상 수상 (Poster: <a href="">PDF</a>)<br>
-        2017 한국정보과학회 2017 한국소프트웨어종합학술대회 논문집 개제 (Paper: <a href="">PDF</a>)<br>
-    </div>
+    <div class="project-external">{{ project.project_extra }}</div>
+{#    <div class="project-external">#}
+{#        #}
+{#        2017 성균관대학교 C-School 성과발표회 우수상 수상 (Poster: <a href="">PDF</a>)<br>#}
+{#        2017 한국정보과학회 2017 한국소프트웨어종합학술대회 논문집 개제 (Paper: <a href="">PDF</a>)<br>#}
+{#    </div>#}
 
 </section>
 {% endblock %}

@@ -6,11 +6,12 @@ class Project(models.Model):
     project_title = models.TextField()
     #프로젝트 내용입니다
     project_text = models.TextField()
-    #프로젝트 날짜입니다. 수정해서 해당 년도-학기로 분류할겁니다
+    project_member = models.TextField(default = "No one")
+    project_extra = models.TextField(default = " ")
+    #프로젝트 날짜입니다.
     project_date = models.DateTimeField(
         blank=True, null=True)
     project_year_semester = models.TextField()
-    project_member = models.TextField()
     project_year = models.TextField()
 
     def project_year_semester(self):
