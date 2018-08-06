@@ -4,19 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/blog/views.py" line="23" mnemonic="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="621158c4-49a9-4517-ae38-0d0448895198" name="Default" comment="test 03&#10;21:12&#10;오늘까지 한 일&#10;- 프론트 연결(html, js 됨)&#10;- Project 모델 생성, 년, 월을 받아 온다.&#10;(이를 이용하여 년도, 학기 분류를 할 수 있어야한다.)&#10;&#10;다음 모임에 해야할 일&#10;- project 추가 기능을 만들고 추가를 할 때 들어가는 데이터(썸네일, 날짜, 프로젝트 설명등)가 뭔지 정해야 된다.&#10;-  누르면 링크타고 프로젝트 자세한 설명 페이지로 들어가는 것 구현.">
-      <change afterPath="$PROJECT_DIR$/blog/static/img/project/gui1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/img/project/gui2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PyneerBlog_betatest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PyneerBlog_betatest.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+    <list default="true" id="621158c4-49a9-4517-ae38-0d0448895198" name="Default" comment="test 07&#10;&#10;05와 이하 동일">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +30,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="2" />
+          <entry key="gitignore" value="1" />
           <entry key="html" value="5" />
           <entry key="py" value="5" />
         </counts>
@@ -49,6 +39,7 @@
         <counts>
           <entry key="CSS" value="2" />
           <entry key="HTML" value="5" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="Python" value="5" />
         </counts>
       </usages-collector>
@@ -56,16 +47,17 @@
         <counts>
           <entry key="Django Console" value="6" />
           <entry key="css" value="3" />
+          <entry key="gitignore" value="13" />
           <entry key="html" value="264" />
           <entry key="py" value="881" />
-          <entry key="txt" value="199" />
+          <entry key="txt" value="224" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="3" />
           <entry key="HTML" value="264" />
-          <entry key="PLAIN_TEXT" value="199" />
+          <entry key="PLAIN_TEXT" value="237" />
           <entry key="Python" value="887" />
         </counts>
       </usages-collector>
@@ -101,14 +93,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/admin.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -166,15 +167,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -208,6 +200,7 @@
         <option value="$PROJECT_DIR$/blog/templates/blog/project_detail.html" />
         <option value="$PROJECT_DIR$/blog/forms.py" />
         <option value="$PROJECT_DIR$/blog/models.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -234,37 +227,6 @@
             <path>
               <item name="PyneerBlog_betatest" type="b2602c69:ProjectViewProjectNode" />
               <item name="PyneerBlog_betatest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PyneerBlog_betatest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PyneerBlog_betatest" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PyneerBlog_betatest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PyneerBlog_betatest" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PyneerBlog_betatest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PyneerBlog_betatest" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PyneerBlog_betatest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PyneerBlog_betatest" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PyneerBlog_betatest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PyneerBlog_betatest" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PyneerBlog_betatest" type="b2602c69:ProjectViewProjectNode" />
@@ -374,11 +336,26 @@
       <option name="project" value="LOCAL" />
       <updated>1533557693493</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="test 06&#10;&#10;05와 이하 동일">
+      <created>1533557725057</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1533557725057</updated>
+    </task>
+    <task id="LOCAL-00006" summary="test 07&#10;&#10;05와 이하 동일">
+      <created>1533557778520</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1533557778520</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.155527" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -392,7 +369,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.28879893" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.28879893" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32967034" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.22131148" />
@@ -447,7 +424,9 @@
     <MESSAGE value="test 02&#10;20:19" />
     <MESSAGE value="test 04&#10;&#10;project 모델 생성 및 디테일 페이지 생성" />
     <MESSAGE value="test 05&#10;&#10;오늘 한 일:&#10;- 동그란 버튼 만들어서 누르기 성공&#10;  반복 생성 된다, 쿼리셋을 보낼때 연도 별로 보내는 것이 아직 덜됐다.&#10;- 프로젝트 디테일 페이지 생성&#10;  문제점은 project_member이 에러....&#10;  &#10; 다음에 한 일:&#10; - 에러 수정&#10; - 사진 첨부기능" />
-    <option name="LAST_COMMIT_MESSAGE" value="test 05&#10;&#10;오늘 한 일:&#10;- 동그란 버튼 만들어서 누르기 성공&#10;  반복 생성 된다, 쿼리셋을 보낼때 연도 별로 보내는 것이 아직 덜됐다.&#10;- 프로젝트 디테일 페이지 생성&#10;  문제점은 project_member이 에러....&#10;  &#10; 다음에 한 일:&#10; - 에러 수정&#10; - 사진 첨부기능" />
+    <MESSAGE value="test 06&#10;&#10;05와 이하 동일" />
+    <MESSAGE value="test 07&#10;&#10;05와 이하 동일" />
+    <option name="LAST_COMMIT_MESSAGE" value="test 07&#10;&#10;05와 이하 동일" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/blog/templates/blog/minutes.html">
@@ -597,10 +576,17 @@
     <entry file="file://$PROJECT_DIR$/blog/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
