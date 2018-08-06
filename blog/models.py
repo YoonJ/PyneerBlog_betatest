@@ -2,16 +2,20 @@ from django.db import models
 from django.utils import timezone
 
 class Project(models.Model):
-    #프로젝트 제목입니다
+    #제목
     project_title = models.TextField()
-    #프로젝트 내용입니다
+    #내용
     project_text = models.TextField()
+    #멤버 이름
     project_member = models.TextField(default = "No one")
+    #기타정보
     project_extra = models.TextField(default = " ")
-    #프로젝트 날짜입니다.
+    #프로젝트 날짜
     project_date = models.DateTimeField(
         blank=True, null=True)
+    #년도-학기
     project_year_semester = models.TextField()
+    #년도
     project_year = models.TextField()
 
     def project_year_semester(self):
@@ -33,20 +37,8 @@ class Project(models.Model):
     def __str__(self):
         return self.project_title
 
-
-# Create your models here.
-class Post(models.Model):
-    author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
-    title = models.CharField(max_length=200)
-    text = models.TextField()
-    created_date = models.DateTimeField(
-            default=timezone.now)
-    published_date = models.DateTimeField(
-            blank=True, null=True)
-
-    def publish(self):
-        self.published_date = timezone.now()
-        self.save()
-
-    def __str__(self):
-        return self.title
+# models.py 수정하고 forms.py 수정하고,
+# admin.py 수정하고,
+# python manage.py makemigrations
+# python manage.py migrate
+# 터미널에서 위의 작업을 실행한다.

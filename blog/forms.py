@@ -1,10 +1,5 @@
 from django import forms
-from .models import Post, Project
-
-class PostForm(forms.ModelForm):
-    class Meta:
-        model = Post
-        fields = ('title', 'text',)
+from .models import Project
 
 class ProjectForm(forms.ModelForm):
     class Meta:
