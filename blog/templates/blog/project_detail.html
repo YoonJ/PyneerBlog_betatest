@@ -1,26 +1,10 @@
 {% extends 'blog/project_base.html' %}
 {% load staticfiles %}
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="{% static 'css/style.css' %}">
-        <link rel="stylesheet" href="{% static 'font/blippo.css' %}">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-        <title>PYNEER</title>
-    </head>
-</html>
-
+{#로드 스테틱파일을 하는 이유는 아래에 이미지를 사용하기 때문이다.#}
+{#사진을 업로드 할 수 있는 방법을 적용한다면 이에 대한 수정이 필요하다.#}
 {% block content %}
+
 <section class="page-project">
-{#  {% if project.project_year_semester %}#}
-{#      <div class="year">#}
-{#          {{ project.project_year_semester }}#}
-{#      </div>#}
-{#  {% endif %}#}
     <div class="project-ty">
         <div class="project-ty__title"><h2>{{ project.project_title }}</h2>
             <div class="project-ty__year">{{ project.project_year }}</div>
@@ -37,11 +21,6 @@
         <img src="{% static 'img/project/gui2.png' %}">
     </div>
     <div class="project-external">{{ project.project_extra }}</div>
-{#    <div class="project-external">#}
-{#        #}
-{#        2017 성균관대학교 C-School 성과발표회 우수상 수상 (Poster: <a href="">PDF</a>)<br>#}
-{#        2017 한국정보과학회 2017 한국소프트웨어종합학술대회 논문집 개제 (Paper: <a href="">PDF</a>)<br>#}
-{#    </div>#}
-
 </section>
+
 {% endblock %}
