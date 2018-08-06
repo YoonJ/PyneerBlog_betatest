@@ -1,13 +1,45 @@
-{% extends 'blog/base.html' %}
+{% extends 'blog/project_base.html' %}
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'font/blippo.css' %}">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <title>PYNEER</title>
+    </head>
+</html>
 
 {% block content %}
-    <div class="project">
-        {% if project.project_year_semester %}
-            <div class="year">
-                {{ project.project_year_semester }}
-            </div>
-        {% endif %}
-        <h1>{{ project.project_title }}</h1>
-        <p>{{ project.project_text|linebreaksbr }}</p>
+<section class="page-project">
+{#  {% if project.project_year_semester %}#}
+{#      <div class="year">#}
+{#          {{ project.project_year_semester }}#}
+{#      </div>#}
+{#  {% endif %}#}
+    <div class="project-ty">
+        <div class="project-ty__title"><h2>{{ project.project_title }}</h2>
+            <div class="project-ty__year">{{ project.project_year }}</div>
+            <div class="project-ty__member">{{ project.project_member }}</div>
+        </div>
     </div>
+    <div class="project-info">
+        <div class="project-info__desc">
+            <p>{{ project.project_text|linebreaksbr }}</p>
+        </div>
+    </div>
+    <div class="project-images">
+        <img src="{% static 'img/project/gui1.png' %}">
+        <img src="{% static 'img/project/gui2.png' %}">
+    </div>
+    <div class="project-external">
+        2017 성균관대학교 C-School 성과발표회 우수상 수상 (Poster: <a href="">PDF</a>)<br>
+        2017 한국정보과학회 2017 한국소프트웨어종합학술대회 논문집 개제 (Paper: <a href="">PDF</a>)<br>
+    </div>
+
+</section>
 {% endblock %}
