@@ -12,14 +12,18 @@ def project_list(request):
     projects = Project.objects.all()
     return render(request, 'blog/project_list.html', {'projects':projects})
 
-def post_list(request):
-    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-created_date')
-    return render(request, 'blog/post_list.html', {'posts':posts})
-    #reder function(request, html name, 매개변수)
+def project_detail(request, pk):
+    project = get_object_or_404(Project, pk=pk)
+    return render(request, 'blog/project_detail.html',{'project':project})
 
-def post_detail(request, pk):
-    post = get_object_or_404(Post, pk=pk)
-    return render(request, 'blog/post_detail.html', {'post':post})
+# def post_list(request):
+#     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-created_date')
+#     return render(request, 'blog/post_list.html', {'posts':posts})
+#     #reder function(request, html name, 매개변수)
+
+# def post_detail(request, pk):
+#     post = get_object_or_404(Post, pk=pk)
+#     return render(request, 'blog/post_detail.html', {'post':post})
 
 def post_new(request):
     if request.method == "POST":

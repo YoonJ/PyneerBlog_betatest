@@ -302,6 +302,68 @@ canvas {
     line-height: 1.5;
     font-size: 0.9rem;
 }
+/* Page.html */
+.page-container{
+    margin: 80px 60px;
+    max-width: 1080px;
+}
+.page-project .project-ty{
+    display: flex;
+    justify-content: space-between;
+}
+.page-project .project-ty__title{
+    max-width: 650px;
+    width: calc(100% - 400px);
+    font-size: 1.0em;
+    font-weight: 700;
+}
+.page-project .project-ty__title h2{
+    border-top: 5px solid #000;
+    display:inline-block;
+}
+.page-project .project-ty__year{
+    margin-left: 50px;
+    width: 350px;
+    font-weight: 700;
+    font-size: 18px;
+    position: relative;
+    left: 84%;
+    float: right;
+}
+.page-project .project-ty__member{
+    margin-left: 50px;
+    width: 350px;
+    line-height:  18px;
+    font-weight: 700;
+    position: relative;
+    left: 84%;
+    float: right;
+}
+
+
+.page-project .project-info{
+    max-width: 650px;
+    width: calc(100% - 400px);
+    margin-bottom: 50px;
+    margin-top: 90px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.page-project .project-images img{
+    width: 500px;
+    display: block;
+}
+
+.page-project .project-external{
+    width: calc(100% - 400px);
+    max-width: 650px;
+    margin-top: 80px;
+    font-weight: 400;
+    font-size: 1.0rem;
+}
+
 
 /* RESPONSIVE */
 @media(max-width: 768px){
@@ -479,6 +541,8 @@ canvas {
         padding-top: 10px;
     }
 }
+
+
 
 
 

@@ -9,20 +9,28 @@ class Project(models.Model):
     #프로젝트 날짜입니다. 수정해서 해당 년도-학기로 분류할겁니다
     project_date = models.DateTimeField(
         blank=True, null=True)
+    project_year_semester = models.TextField()
+    project_member = models.TextField()
+    project_year = models.TextField()
 
-    #project 년도(int? string? 확인필요) 리턴
-    def year(self):
-        return self.project_date.year
-    #project 학기를 반환하고 싶다
-    def semester_month(self):
-        return self.project_date.month
-    
+    def project_year_semester(self):
+        if self.project_date.month >= 1 & self.project_date.month <= 6:
+            semester = 1
+        elif self.project_date.month >= 7 & self.project_date.month <= 12:
+            semester = 2
+        else:
+            semester = 3
+        return str(self.project_date.year) + '-' + str(semester)
+
+    def project_year(self):
+        return str(self.project_date.year)
+
     def publish(self):
         self.project_date = timezone.now()
         self.save()
 
     def __str__(self):
-        return self.title
+        return self.project_title
 
 
 # Create your models here.
